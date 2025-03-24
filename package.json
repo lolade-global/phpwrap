@@ -1,0 +1,22 @@
+{
+    "name": "phpwrap",
+    "version": "1.0.0",
+    "bin": "dist/cli.js",
+    "scripts": {
+      "build": "tsc && pkg . --targets node18-macos-x64 --output dist/phpwrap"
+    },
+    "pkg": {
+      "assets": [
+        "bin/php-mac",
+        "bin/composer.phar"
+      ]
+    },
+    "dependencies": {
+      "commander": "^10.0.0"
+    },
+    "devDependencies": {
+      "pkg": "^5.8.1",
+      "typescript": "^5.2.2"
+    }
+  }
+  
